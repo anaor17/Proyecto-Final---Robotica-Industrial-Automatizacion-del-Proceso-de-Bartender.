@@ -54,20 +54,35 @@ Este procedimiento se repite hasta completar la cantidad de ingredientes requeri
 
 Durante el desarrollo del proyecto, el sistema robotizado está diseñado para manipular los siguientes objetos:
 
-- Coctelera  
-- Jigger  
-- Cucharilla  
-- Envases de ingredientes  
-- Copa para servido final  
+- Coctelera
+![Descripción de la imagen](Imágenes/coctelera.png)
+ 
+- Jigger
+![Descripción de la imagen](Imágenes/nombre_de_la_imagen.png)
+
+- Cucharilla
+![Descripción de la imagen](Imágenes/nombre_de_la_imagen.png)
+
+- Envases de ingredientes
+![Descripción de la imagen](Imágenes/botella_vino.png)
+
+- Copa para servido final
+![Descripción de la imagen](Imágenes/vaso.png)
+
 
 Estos objetos presentan diferentes geometrías y tamaños, lo que representa un reto para el diseño de la herramienta de agarre.
 
 ---
 
 ## 5. Desarrollo de la Herramienta Multi-Propósito (Gripper)
+![Descripción de la imagen](Imágenes/gripper.png)
+
 Se diseñó un gripper personalizado accionado mediante un sistema electroneumático, empleando un cilindro neumático para gripper, disponible en el laboratorio. Este sistema permite el control preciso de la apertura y el cierre del gripper, garantizando un funcionamiento confiable durante todo el proceso automatizado. El diseño del gripper fue pensado para adaptarse a los distintos implementos utilizados en el proceso de bartender, sin necesidad de realizar cambios mecánicos entre ciclos de operación.
 
 El gripper cuenta con un orificio principal de mayor tamaño, destinado a la manipulación de objetos de mayor volumen como las botellas, el vaso y la coctelera. Adicionalmente, incorpora un orificio secundario de menor tamaño, diseñado específicamente para la sujeción del jigger, así como una superficie recta que permite el agarre adecuado de la cucharilla. Esta configuración facilita la manipulación de objetos con diferentes geometrías utilizando una única herramienta.
+
+![Descripción de la imagen](Imágenes/plano gripper.png)
+
 
 El diseño del gripper fue concebido para garantizar un agarre seguro, repetible y estable, minimizando el riesgo de deslizamiento o caída de los objetos durante la manipulación. Asimismo, su geometría y sistema de accionamiento permiten una fácil instalación sobre los robots disponibles en el laboratorio, sin requerir modificaciones ni el desmontaje del sistema neumático existente.
 
