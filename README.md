@@ -113,26 +113,17 @@ El diseño del gripper fue concebido para garantizar un agarre seguro, repetible
 
 ## 6. Alistamiento del Sistema
 
-La barra de almacenamiento se representa mediante una estantería con seis posiciones definidas (A1, A2, A3, B1, B2, B3). 
-Los ingredientes son ubicados de manera aleatoria al inicio del proceso, considerando que cualquier objeto puede encontrarse en cualquier posición.
+La barra de almacenamiento del sistema automatizado se modela como una estantería con seis posiciones claramente definidas, identificadas como A1, A2, A3, B1, B2 y B3. Esta disposición permite representar de manera estructurada el almacenamiento de los diferentes ingredientes utilizados en la preparación de las bebidas. Al inicio de cada ciclo de operación, los ingredientes se ubican en estas posiciones.
 
-Tanto la barra de almacenamiento como los ingredientes son posicionados dentro del espacio de trabajo del manipulador antes de iniciar el proceso, sin realizar ajustes durante la ejecución del sistema automatizado.
+Previo a la ejecución de las rutinas automáticas, se realizaron diversas pruebas experimentales utilizando el gripper como herramienta del robot. Estas pruebas tuvieron como objetivo evaluar si la posición y orientación del gripper resultaban adecuadas para llevar a cabo la rutina completa de preparación del cóctel, así como verificar su capacidad para recoger de manera segura y repetible todos los objetos necesarios, tales como botellas, jigger, cucharilla y coctelera. A partir de estas evaluaciones se comprobó que el gripper permitía una sujeción estable de los distintos elementos, sin comprometer la precisión de los movimientos ni la seguridad del sistema durante la operación.
+
+Adicionalmente, se llevó a cabo la medición y el modelamiento detallado de todos los elementos involucrados en el proceso, incluyendo la barra de almacenamiento, los ingredientes y los utensilios utilizados. Estas mediciones fueron fundamentales para recrear con fidelidad cada objeto dentro del entorno de simulación de RobotStudio. Con los modelos correctamente dimensionados y posicionados dentro del espacio de trabajo del manipulador, fue posible definir de manera precisa los targets y las trayectorias del robot, asegurando que los movimientos simulados coincidieran con el comportamiento esperado en una implementación real.
 
 ---
 
 ## 7. Proceso Automatizado
 
-El proceso automatizado sigue la siguiente secuencia general:
-
-1. Selección del ingrediente mediante la interfaz HMI.  
-2. Toma del ingrediente desde la barra de almacenamiento.  
-3. Vertido del ingrediente en el jigger para su medición.  
-4. Adición del ingrediente a la coctelera.  
-5. Mezclado inicial con cucharilla tras añadir varios ingredientes.  
-6. Agitación de la coctelera.  
-7. Servido del cóctel en la copa final.
-
-El diagrama de flujo del proceso se encuentra en la carpeta `diagrams/`.
+El proceso automatizado de preparación del cóctel se desarrolla siguiendo una secuencia ordenada y repetible que garantiza precisión, seguridad y consistencia en cada bebida elaborada. Inicialmente, el usuario interactúa con la interfaz HMI para seleccionar el ingrediente deseado, lo que permite al sistema identificar la ubicación exacta del mismo dentro de la barra de almacenamiento. A continuación, el robot ejecuta la toma controlada del ingrediente seleccionado, asegurando una manipulación estable y precisa. Posteriormente, el líquido es vertido en el jigger, donde se realiza la medición exacta de la cantidad requerida, evitando errores en la dosificación. Una vez medida, la porción es añadida a la coctelera, donde se van incorporando progresivamente los diferentes ingredientes seleccionados. Tras la adición de varios componentes, se lleva a cabo un mezclado inicial mediante una cucharilla para homogeneizar la mezcla. Seguidamente, la coctelera es agitada de forma automática durante un tiempo determinado, permitiendo una correcta integración de los sabores. Finalmente, el sistema procede al servido del cóctel en la copa final, completando el ciclo de preparación de manera eficiente y garantizando un resultado uniforme en cada ejecución.
 
 ---
 
@@ -150,15 +141,7 @@ En conjunto, la HMI no solo permite seleccionar las repisas y bebidas de manera 
 
 ---
 
-## 9. Programación del Robot
-
-La programación del sistema se realizó en lenguaje RAPID, organizando el código de manera modular para facilitar su comprensión y mantenimiento. Se implementaron rutinas para el control del movimiento del robot, la activación del gripper y la interacción con la interfaz HMI.
-
-Los archivos de código se encuentran en la carpeta `rapid/`.
-
----
-
-## 11. Simulación en RobotStudio
+## 10. Simulación en RobotStudio
 
 Se desarrolló el modelo completo de la celda de trabajo en RobotStudio, incluyendo el manipulador, la barra de almacenamiento, los implementos de bartender y la banda transportadora. La simulación permite visualizar las trayectorias del robot y calcular el tiempo total del proceso.
 
@@ -166,13 +149,13 @@ El proyecto de RobotStudio se encuentra en la carpeta `robotstudio/`.
 
 ---
 
-## 12. Video de Presentación
+## 11. Video de Presentación
 
 El video de presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/drive/folders/1IVio0eSMy9uFiXIniwHXzH0S-tmAQply?usp=sharing
 
 ---
 
-## 13. Aprendizajes y Consideraciones
+## 12. Aprendizajes y Consideraciones
 
 Durante el desarrollo del proyecto se fortalecieron conocimientos en programación de robots industriales, diseño de herramientas de agarre y automatización de procesos. Además, se identificó la importancia de la seguridad al manipular líquidos en entornos con sistemas eléctricos y mecánicos.
 
@@ -180,6 +163,6 @@ El proyecto permitió comprender de manera práctica los retos asociados a la au
 
 ---
 
-## 14. Referencias
+## 13. Referencias
 
 - ABB Robotics. (2023). RobotStudio: Manual de usuario y guía de desarrollo de interfaces HMI con ScreenMaker. ABB Group.
