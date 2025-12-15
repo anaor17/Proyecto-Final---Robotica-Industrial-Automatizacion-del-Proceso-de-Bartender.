@@ -1,4 +1,4 @@
-# 🥂 Automatización del Proceso de Bartender  
+# Automatización del Proceso de Bartender  
 ## Proyecto Final – Robótica Industrial
 
 **Curso:** Robótica Industrial  
@@ -55,19 +55,33 @@ Este procedimiento se repite hasta completar la cantidad de ingredientes requeri
 Durante el desarrollo del proyecto, el sistema robotizado está diseñado para manipular los siguientes objetos:
 
 - Coctelera
-![Descripción de la imagen](Imágenes/coctelera.png)
+<p align="center">
+  <img src="Imágenes/cocteleraa.png" width="400">
+</p>
  
 - Jigger
-![Descripción de la imagen](Imágenes/nombre_de_la_imagen.png)
+<p align="center">
+  <img src="Imágenes/hmi_principal.png" width="400">
+</p>
+
 
 - Cucharilla
-![Descripción de la imagen](Imágenes/nombre_de_la_imagen.png)
+<p align="center">
+  <img src="Imágenes/hmi_principal.png" width="400">
+</p>
+
 
 - Envases de ingredientes
-![Descripción de la imagen](Imágenes/botella_vino.png)
+<p align="center">
+  <img src="Imágenes/botella_vino.png" width="400">
+</p>
+
 
 - Copa para servido final
-![Descripción de la imagen](Imágenes/vaso.png)
+<p align="center">
+  <img src="Imágenes/vaso.png" width="400">
+</p>
+
 
 
 Estos objetos presentan diferentes geometrías y tamaños, lo que representa un reto para el diseño de la herramienta de agarre.
