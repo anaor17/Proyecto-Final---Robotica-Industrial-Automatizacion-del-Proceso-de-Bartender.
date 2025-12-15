@@ -56,30 +56,30 @@ Durante el desarrollo del proyecto, el sistema robotizado está diseñado para m
 
 - Coctelera
 <p align="center">
-  <img src="Imágenes/cocteleraa.png" width="400">
+  <img src="Imágenes/coctelera.png" width="200">
 </p>
  
 - Jigger
 <p align="center">
-  <img src="Imágenes/hmi_principal.png" width="400">
+  <img src="Imágenes/hmi_principal.png" width="200">
 </p>
 
 
 - Cucharilla
 <p align="center">
-  <img src="Imágenes/hmi_principal.png" width="400">
+  <img src="Imágenes/hmi_principal.png" width="200">
 </p>
 
 
 - Envases de ingredientes
 <p align="center">
-  <img src="Imágenes/botella_vino.png" width="400">
+  <img src="Imágenes/botella_vino.png" width="200">
 </p>
 
 
 - Copa para servido final
 <p align="center">
-  <img src="Imágenes/vaso.png" width="400">
+  <img src="Imágenes/vaso.png" width="200">
 </p>
 
 
@@ -89,13 +89,20 @@ Estos objetos presentan diferentes geometrías y tamaños, lo que representa un 
 ---
 
 ## 5. Desarrollo de la Herramienta Multi-Propósito (Gripper)
-![Descripción de la imagen](Imágenes/gripper.png)
+
+<p align="center">
+  <img src="Imágenes/gripper.png" width="200">
+</p>
 
 Se diseñó un gripper personalizado accionado mediante un sistema electroneumático, empleando un cilindro neumático para gripper, disponible en el laboratorio. Este sistema permite el control preciso de la apertura y el cierre del gripper, garantizando un funcionamiento confiable durante todo el proceso automatizado. El diseño del gripper fue pensado para adaptarse a los distintos implementos utilizados en el proceso de bartender, sin necesidad de realizar cambios mecánicos entre ciclos de operación.
 
 El gripper cuenta con un orificio principal de mayor tamaño, destinado a la manipulación de objetos de mayor volumen como las botellas, el vaso y la coctelera. Adicionalmente, incorpora un orificio secundario de menor tamaño, diseñado específicamente para la sujeción del jigger, así como una superficie recta que permite el agarre adecuado de la cucharilla. Esta configuración facilita la manipulación de objetos con diferentes geometrías utilizando una única herramienta.
 
-![Descripción de la imagen](Imágenes/plano gripper.png)
+<p align="center">
+  <img src="Imágenes/plano gripper.png" width="200">
+</p>
+
+
 
 
 El diseño del gripper fue concebido para garantizar un agarre seguro, repetible y estable, minimizando el riesgo de deslizamiento o caída de los objetos durante la manipulación. Asimismo, su geometría y sistema de accionamiento permiten una fácil instalación sobre los robots disponibles en el laboratorio, sin requerir modificaciones ni el desmontaje del sistema neumático existente.
