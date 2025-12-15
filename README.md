@@ -61,13 +61,13 @@ Durante el desarrollo del proyecto, el sistema robotizado está diseñado para m
  
 - Jigger
 <p align="center">
-  <img src="Imágenes/hmi_principal.png" width="200">
+  <img src="Imágenes/jigger.jpeg" width="200">
 </p>
 
 
 - Cucharilla
 <p align="center">
-  <img src="Imágenes/hmi_principal.png" width="200">
+  <img src="Imágenes/cucharilla.jpeg" width="200">
 </p>
 
 
@@ -91,7 +91,7 @@ Estos objetos presentan diferentes geometrías y tamaños, lo que representa un 
 ## 5. Desarrollo de la Herramienta Multi-Propósito (Gripper)
 
 <p align="center">
-  <img src="Imágenes/gripper.png" width="200">
+  <img src="Imágenes/gripper.png" width="400">
 </p>
 
 Se diseñó un gripper personalizado accionado mediante un sistema electroneumático, empleando un cilindro neumático para gripper, disponible en el laboratorio. Este sistema permite el control preciso de la apertura y el cierre del gripper, garantizando un funcionamiento confiable durante todo el proceso automatizado. El diseño del gripper fue pensado para adaptarse a los distintos implementos utilizados en el proceso de bartender, sin necesidad de realizar cambios mecánicos entre ciclos de operación.
@@ -99,7 +99,7 @@ Se diseñó un gripper personalizado accionado mediante un sistema electroneumá
 El gripper cuenta con un orificio principal de mayor tamaño, destinado a la manipulación de objetos de mayor volumen como las botellas, el vaso y la coctelera. Adicionalmente, incorpora un orificio secundario de menor tamaño, diseñado específicamente para la sujeción del jigger, así como una superficie recta que permite el agarre adecuado de la cucharilla. Esta configuración facilita la manipulación de objetos con diferentes geometrías utilizando una única herramienta.
 
 <p align="center">
-  <img src="Imágenes/plano gripper.png" width="200">
+  <img src="Imágenes/plano gripper.png" width="400">
 </p>
 
 
@@ -113,7 +113,9 @@ El diseño del gripper fue concebido para garantizar un agarre seguro, repetible
 
 ## 6. Alistamiento del Sistema
 
-La barra de almacenamiento del sistema automatizado se modela como una estantería con seis posiciones claramente definidas, identificadas como A1, A2, A3, B1, B2 y B3. Esta disposición permite representar de manera estructurada el almacenamiento de los diferentes ingredientes utilizados en la preparación de las bebidas. Al inicio de cada ciclo de operación, los ingredientes se ubican en estas posiciones.
+La barra de almacenamiento del sistema automatizado se modela como una estantería con seis posiciones claramente definidas, distribuidas en tres niveles, con dos posiciones ubicadas en cada uno de ellos. Esta configuración se adoptó de manera intencional y no se implementó un arreglo de tres posiciones en dos niveles, ya que el gripper del robot presenta un ancho considerable y no dispone del espacio suficiente para tomar tres botellas ubicadas en un mismo nivel sin riesgo de colisión con los objetos adyacentes o con la propia estructura de la estantería.
+
+Esta disposición permite representar de manera estructurada y segura el almacenamiento de los diferentes ingredientes utilizados en la preparación de las bebidas, garantizando accesos libres de interferencias durante la operación del manipulador. Al inicio de cada ciclo de operación, los ingredientes se ubican en estas posiciones, manteniendo la misma distribución a lo largo de todo el proceso automatizado.
 
 Previo a la ejecución de las rutinas automáticas, se realizaron diversas pruebas experimentales utilizando el gripper como herramienta del robot. Estas pruebas tuvieron como objetivo evaluar si la posición y orientación del gripper resultaban adecuadas para llevar a cabo la rutina completa de preparación del cóctel, así como verificar su capacidad para recoger de manera segura y repetible todos los objetos necesarios, tales como botellas, jigger, cucharilla y coctelera. A partir de estas evaluaciones se comprobó que el gripper permitía una sujeción estable de los distintos elementos, sin comprometer la precisión de los movimientos ni la seguridad del sistema durante la operación.
 
@@ -130,10 +132,19 @@ El proceso automatizado de preparación del cóctel se desarrolla siguiendo una 
 ## 8. Interfaz Humano-Máquina (HMI)
 
 La interfaz hombre–máquina (HMI) fue desarrollada utilizando la herramienta ScreenMaker de RobotStudio, la cual permitió diseñar un entorno gráfico intuitivo y funcional para la interacción entre el usuario y el sistema automatizado. En la pestaña principal de la interfaz se dispusieron seis bebidas alcohólicas, cada una representada mediante su imagen correspondiente, lo que facilita su identificación visual y mejora la experiencia de uso del sistema.
+<p align="center">
+  <img src="Imágenes/pantallaInicio.jpeg" width="200">
+</p>
 
 Cada bebida está asociada a una repisa específica del sistema, de modo que, al seleccionar una opción, el usuario indica de forma directa desde cuál posición se tomará el ingrediente requerido. Adicionalmente, en esta misma pantalla se incorporó un contador de selección, el cual permite que el usuario elija hasta tres bebidas en una misma operación, asegurando que el sistema controle correctamente el número de selecciones realizadas antes de habilitar la siguiente etapa del proceso.
+<p align="center">
+  <img src="Imágenes/preparacion.jpeg" width="200">
+</p>
 
 Una vez completadas las tres selecciones, el usuario puede proceder a presionar la opción “Preparar bebida”, lo que da inicio al ciclo automático del sistema. Durante la ejecución del proceso, la HMI muestra una pantalla de interludio, acompañada de una imagen representativa, cuya función es informar al usuario que la bebida se encuentra en proceso de preparación, evitando así interacciones no deseadas mientras el sistema se encuentra en operación.
+<p align="center">
+  <img src="Imágenes/terminada.jpeg" width="200">
+</p>
 
 Al finalizar el ciclo de preparación, la interfaz despliega una imagen final de confirmación, indicando de manera clara que la bebida ha sido preparada exitosamente y se encuentra lista. Esta retroalimentación visual permite al usuario identificar el estado final del proceso sin ambigüedades, mejorando la comunicación entre el sistema robotizado y el operador.
 
