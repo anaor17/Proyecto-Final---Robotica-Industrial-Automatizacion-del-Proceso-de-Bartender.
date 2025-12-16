@@ -168,9 +168,15 @@ El video de presentación del proyecto se encuentra en el siguiente link: https:
 
 ## Inconvenientes Presentados en el Desarrollo del Proyecto
 
+<p align="center">
+  <img src="Imágenes/gripperRoto.png" width="400">
+</p>
+
 Durante la implementación física de la rutina desarrollada para el cumplimiento del proyecto se presentó un inconveniente que impidió la continuación normal de las pruebas experimentales. En particular, el soporte del gripper, componente encargado de unir el flange del robot con el cilindro neumático de doble efecto utilizado para el accionamiento de la herramienta, sufrió una falla estructural y se rompió durante la ejecución del sistema.
 
 Tras el análisis del evento, se determinó que la falla ocurrió como consecuencia de un proceso de fatiga del material. Este fenómeno se vio favorecido por las cargas repetitivas generadas durante los ciclos de apertura y cierre del gripper, así como por las fuerzas ejercidas durante la manipulación de los distintos implementos del proceso de bartender. La combinación de estos factores provocó el debilitamiento progresivo del soporte hasta su fractura.
+
+Como posible solución a este inconveniente, se identificó que la rotura del soporte podría haberse reparado mediante el uso de un adhesivo estructural de poliuretano, específicamente el pegante Indupeg 0419, el cual ofrece buenas propiedades de adherencia y resistencia mecánica para este tipo de aplicaciones. Sin embargo, debido a las limitaciones de tiempo asociadas a la fecha de entrega del proyecto, no fue posible realizar dicha reparación ni llevar a cabo las pruebas necesarias para validar su efectividad, por lo que se optó por no continuar con la implementación física y concentrar los esfuerzos en la simulación del sistema.
 
 ---
 ## 12. Aprendizajes y Consideraciones
