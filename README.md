@@ -111,7 +111,7 @@ Adicionalmente, se llevó a cabo la medición y el modelamiento detallado de tod
 
 ---
 
-## 7. Proceso Automatizado
+## 7. Implementación física del proceso
 
 [![Video del laboratorio Real](https://img.youtube.com/vi/OSdnihtZNg4/0.jpg)](https://www.youtube.com/watch?v=OSdnihtZNg4)
 
@@ -124,6 +124,8 @@ Posteriormente, el líquido es vertido en el jigger, donde se realiza la medici�
 <p align="center"> <img src="Imágenes/tomaCucharilla.jpg" width="400"> </p> <p align="center"><em>Manipulación de la cucharilla por parte del robot para realizar el mezclado de los ingredientes.</em></p>
 
 Tras la adición de varios componentes, se lleva a cabo un mezclado inicial mediante una cucharilla para homogeneizar la mezcla. Seguidamente, la coctelera es agitada de forma automática durante un tiempo determinado, permitiendo una correcta integración de los sabores. Finalmente, el sistema procede al servido del cóctel en la copa final, completando el ciclo de preparación de manera eficiente y garantizando un resultado uniforme en cada ejecución.
+
+<p align="center"> <img src="Imágenes/planoplantareal.jpg" width="400"> </p> <p align="center"><em>Plano de planta de los elementos.</em></p>
 
 ---
 
@@ -175,6 +177,7 @@ El proceso espera la activación del botón Preparar bebida; cuando está activo
 ---
 
 ## 9. Simulación en RobotStudio
+<p align="center"> <img src="Imágenes/planosimulacion.jpeg" width="600"> </p> <p align="center"><em>Plano de planta de los elementos de la simulación.</em></p>
 
 La simulación del sistema automatizado se llevó a cabo en el software ABB RobotStudio, utilizando un entorno virtual que replica las condiciones reales de operación del robot industrial. En este entorno se importó el modelo del robot, junto con los elementos del proceso, tales como botellas, jigger, coctelera, utensilios de mezclado y el área de trabajo. El objetivo principal de la simulación fue validar la lógica del programa RAPID, comprobar la correcta secuencia de movimientos y garantizar la ausencia de colisiones antes de una posible implementación física.
 
@@ -187,9 +190,10 @@ Una vez finalizada la fase de adición de ingredientes, se simuló el procedimie
 Posteriormente, se ejecutó el procedimiento Path_batir, encargado de simular el cierre de la coctelera, el proceso de agitado y el servido final de la bebida. La simulación permitió confirmar que la secuencia de movimientos es coherente, continua y segura, y que las transiciones entre posiciones están correctamente definidas para evitar esfuerzos innecesarios en el manipulador.
 
 Finalmente, se validó el procedimiento GoHome, el cual retorna el robot a su posición de origen una vez finalizado el ciclo completo. Esta etapa es fundamental para dejar el sistema en un estado seguro y preparado para un nuevo ciclo de operación. En RobotStudio se comprobó que el robot alcanza la posición home sin interferencias y respetando las condiciones de seguridad establecidas.
+<p align="center"> <img src="Imágenes/smartcomponent.jpeg" width="600"> </p> <p align="center"><em>Smart Component usado en simulación.</em></p>
 
 En conclusión, la simulación en RobotStudio permitió validar de manera efectiva la lógica del programa RAPID, la correcta ejecución de los distintos procedimientos y la viabilidad del proceso automatizado. Esta etapa resultó clave para detectar posibles errores de secuencia, optimizar trayectorias y garantizar un funcionamiento seguro y eficiente del sistema antes de su implementación en un entorno real.
-
+<p align="center"> <img src="Imágenes/smartcomponent (3).jpeg" width="600"> </p> <p align="center"><em>Smart Component usado en simulación.</em></p>
 ### Video de simulación
 [![Video del laboratorio Real](https://img.youtube.com/vi/pXSyhm7AOjs/0.jpg)](https://www.youtube.com/watch?v=pXSyhm7AOjs)
 [![Video del laboratorio Real](https://img.youtube.com/vi/9EYyWyW5B4Q/0.jpg)](https://www.youtube.com/watch?v=9EYyWyW5B4Q)
@@ -287,6 +291,9 @@ Este diagrama de flujo muestra el retorno del robot a su posición de origen una
 ## 10. Video de Presentación
 
 El video de presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/drive/folders/1IVio0eSMy9uFiXIniwHXzH0S-tmAQply?usp=sharing
+
+## Presentación de diapositivas del proyecto
+La presentación del proyecto se encuentra en el siguiente link: https://www.canva.com/design/DAG7o7kAMEg/2C8pYVQSqTkwUN5pwheIzA/edit
 
 ---
 
