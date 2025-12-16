@@ -113,6 +113,10 @@ El diseño del gripper fue concebido para garantizar un agarre seguro, repetible
 
 ## 6. Alistamiento del Sistema
 
+<p align="center">
+  <img src="Imágenes/montajeReal.png" width="400">
+</p>
+
 La barra de almacenamiento del sistema automatizado se modela como una estantería con seis posiciones claramente definidas, distribuidas en tres niveles, con dos posiciones ubicadas en cada uno de ellos. Esta configuración se adoptó de manera intencional y no se implementó un arreglo de tres posiciones en dos niveles, ya que el gripper del robot presenta un ancho considerable y no dispone del espacio suficiente para tomar tres botellas ubicadas en un mismo nivel sin riesgo de colisión con los objetos adyacentes o con la propia estructura de la estantería.
 
 Esta disposición permite representar de manera estructurada y segura el almacenamiento de los diferentes ingredientes utilizados en la preparación de las bebidas, garantizando accesos libres de interferencias durante la operación del manipulador. Al inicio de cada ciclo de operación, los ingredientes se ubican en estas posiciones, manteniendo la misma distribución a lo largo de todo el proceso automatizado.
@@ -125,7 +129,19 @@ Adicionalmente, se llevó a cabo la medición y el modelamiento detallado de tod
 
 ## 7. Proceso Automatizado
 
-El proceso automatizado de preparación del cóctel se desarrolla siguiendo una secuencia ordenada y repetible que garantiza precisión, seguridad y consistencia en cada bebida elaborada. Inicialmente, el usuario interactúa con la interfaz HMI para seleccionar el ingrediente deseado, lo que permite al sistema identificar la ubicación exacta del mismo dentro de la barra de almacenamiento. A continuación, el robot ejecuta la toma controlada del ingrediente seleccionado, asegurando una manipulación estable y precisa. Posteriormente, el líquido es vertido en el jigger, donde se realiza la medición exacta de la cantidad requerida, evitando errores en la dosificación. Una vez medida, la porción es añadida a la coctelera, donde se van incorporando progresivamente los diferentes ingredientes seleccionados. Tras la adición de varios componentes, se lleva a cabo un mezclado inicial mediante una cucharilla para homogeneizar la mezcla. Seguidamente, la coctelera es agitada de forma automática durante un tiempo determinado, permitiendo una correcta integración de los sabores. Finalmente, el sistema procede al servido del cóctel en la copa final, completando el ciclo de preparación de manera eficiente y garantizando un resultado uniforme en cada ejecución.
+El proceso automatizado de preparación del cóctel se desarrolla siguiendo una secuencia ordenada y repetible que garantiza precisión, seguridad y consistencia en cada bebida elaborada. Inicialmente, el usuario interactúa con la interfaz HMI para seleccionar el ingrediente deseado, lo que permite al sistema identificar la ubicación exacta del mismo dentro de la barra de almacenamiento. A continuación, el robot ejecuta la toma controlada del ingrediente seleccionado, asegurando una manipulación estable y precisa. 
+
+<p align="center">
+  <img src="Imágenes/tomaVaso.png" width="400">
+</p>
+
+Posteriormente, el líquido es vertido en el jigger, donde se realiza la medición exacta de la cantidad requerida, evitando errores en la dosificación. Una vez medida, la porción es añadida a la coctelera, donde se van incorporando progresivamente los diferentes ingredientes seleccionados. 
+
+<p align="center">
+  <img src="Imágenes/tomaCucharilla.png" width="400">
+</p>
+
+Tras la adición de varios componentes, se lleva a cabo un mezclado inicial mediante una cucharilla para homogeneizar la mezcla. Seguidamente, la coctelera es agitada de forma automática durante un tiempo determinado, permitiendo una correcta integración de los sabores. Finalmente, el sistema procede al servido del cóctel en la copa final, completando el ciclo de preparación de manera eficiente y garantizando un resultado uniforme en cada ejecución.
 
 ---
 
