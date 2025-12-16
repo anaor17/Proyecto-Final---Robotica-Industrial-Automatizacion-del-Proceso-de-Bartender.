@@ -192,6 +192,7 @@ En conclusión, la simulación en RobotStudio permitió validar de manera efecti
 
 ### Video de simulación
 [![Video del laboratorio Real](https://img.youtube.com/vi/pXSyhm7AOjs/0.jpg)](https://www.youtube.com/watch?v=pXSyhm7AOjs)
+[![Video del laboratorio Real](https://img.youtube.com/vi/9EYyWyW5B4Q/0.jpg)](https://www.youtube.com/watch?v=9EYyWyW5B4Q)
 
 ### Diagramas de flujo
 #### Diagrama general
