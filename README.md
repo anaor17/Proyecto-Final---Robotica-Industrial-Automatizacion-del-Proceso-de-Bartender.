@@ -140,7 +140,8 @@ Al finalizar el ciclo de preparación, la interfaz despliega una imagen final de
 En conjunto, la HMI no solo permite seleccionar las repisas y bebidas de manera eficiente, sino que también ofrece una visualización clara del estado del proceso y de las posiciones utilizadas durante cada ciclo de operación. Esto contribuye significativamente a la usabilidad, seguridad y control del sistema, garantizando una interacción fluida y confiable entre el usuario y la celda robotizada.
 
 ### Diagrama de flujo
-``` mermaid
+```mermaid
+    flowchart TD
     A[Inicio] --> B[Esperar boton Preparar bebida]
 
     B --> C{Start activo}
