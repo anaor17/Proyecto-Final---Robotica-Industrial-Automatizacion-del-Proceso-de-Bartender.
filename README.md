@@ -162,9 +162,38 @@ Una vez completadas las tres selecciones, el usuario puede proceder a presionar 
   <img src="Imágenes/terminada.jpeg" width="600">
 </p>
 
-Al finalizar el ciclo de preparación, la interfaz despliega una imagen final de confirmación, indicando de manera clara que la bebida ha sido preparada exitosamente y se encuentra lista. Esta retroalimentación visual permite al usuario identificar el estado final del proceso sin ambigüedades, mejorando la comunicación entre el sistema robotizado y el operador.
+Al finalizar el ciclo de preparación, la interfaz despliega una imagen final de confirmación, indicando de manera clara que la bebida ha sido preparada exitosamente y se encuentra lista, también se presenta la opción de reiniciar el proceso y preparar otra bebida. Esta retroalimentación visual permite al usuario identificar el estado final del proceso sin ambigüedades, mejorando la comunicación entre el sistema robotizado y el operador.
 
 En conjunto, la HMI no solo permite seleccionar las repisas y bebidas de manera eficiente, sino que también ofrece una visualización clara del estado del proceso y de las posiciones utilizadas durante cada ciclo de operación. Esto contribuye significativamente a la usabilidad, seguridad y control del sistema, garantizando una interacción fluida y confiable entre el usuario y la celda robotizada.
+
+### Diagrama de flujo
+``` flowchart TD
+    A[Inicio] --> B[Esperar boton Preparar bebida]
+
+    B --> C{Start activo}
+    C -->|Si| D[Servir bebida 1]
+    C -->|No| B
+
+    D --> E[Servir bebida 2]
+    E --> F[Servir bebida 3]
+
+    F --> G[Secuencia final]
+    G --> H[Reset variables]
+    H --> B
+
+    D --> J[Ejecutar ServeShot shot1]
+    E --> K[Ejecutar ServeShot shot2]
+    F --> L[Ejecutar ServeShot shot3]
+
+    J --> M{Shot valido}
+    M -->|Si| N[Seleccionar Path Botella]
+    M -->|No| T[Fin ServeShot]
+
+    N --> O[Path Botella 1 a 6]
+    O --> T
+```
+
+El proceso espera la activación del botón Preparar bebida; cuando está activo, sirve tres bebidas en secuencia. Para cada bebida se ejecuta el procedimiento ServeShot, donde se valida el valor del shot y, si es válido, se selecciona la trayectoria correspondiente de la botella. Al finalizar, el sistema ejecuta una secuencia final, reinicia las variables y vuelve al estado de espera para una nueva operación.
 
 ---
 
@@ -182,6 +211,95 @@ Posteriormente, se ejecutó el procedimiento Path_batir, encargado de simular el
 Finalmente, se validó el procedimiento GoHome, el cual retorna el robot a su posición de origen una vez finalizado el ciclo completo. Esta etapa es fundamental para dejar el sistema en un estado seguro y preparado para un nuevo ciclo de operación. En RobotStudio se comprobó que el robot alcanza la posición home sin interferencias y respetando las condiciones de seguridad establecidas.
 
 En conclusión, la simulación en RobotStudio permitió validar de manera efectiva la lógica del programa RAPID, la correcta ejecución de los distintos procedimientos y la viabilidad del proceso automatizado. Esta etapa resultó clave para detectar posibles errores de secuencia, optimizar trayectorias y garantizar un funcionamiento seguro y eficiente del sistema antes de su implementación en un entorno real.
+
+### Diagramas de flujo
+#### Diagrama general
+
+````
+flowchart TD
+    A([Inicio]) --> B[Inicialización del sistema]
+
+    B --> C{¿Hay botella seleccionada?}
+
+    C -->|Sí| D[Ejecutar Path_Botella i]
+    C -->|No| E[Path_revolver]
+
+    D --> F{¿Hay otra botella seleccionada y menos de 3 bebidas ya seleccionadas?}
+
+    F -->|Sí| D
+    F -->|No| E
+
+    E --> G[Path_batir]
+    G --> H[GoHome]
+    H --> I([Fin])
+
+````
+El diagrama de flujo representa la lógica general de operación del sistema automatizado para la preparación de bebidas. El proceso inicia con la inicialización del sistema, tras lo cual se verifica si existe una botella seleccionada. En caso afirmativo, se ejecuta el procedimiento correspondiente al trayecto de la botella (Path_Botella i). Finalizada esta acción, el sistema evalúa si hay otra botella seleccionada y si aún no se ha alcanzado el límite de tres bebidas; de cumplirse esta condición, el proceso de selección y ejecución de botellas se repite. Cuando no hay más botellas por procesar o se alcanza el límite establecido, el sistema continúa con el procedimiento de mezclado (Path_revolver), seguido del batido (Path_batir). Finalmente, el robot retorna a su posición inicial mediante GoHome, dando por concluido el ciclo de operación.
+
+#### Path_Botella i
+
+```
+flowchart TD
+    A([Inicio Path_Botella]) --> B[Mover a posición segura]
+    B --> C[Abrir pinza]
+    C --> D[Tomar botella]
+    D --> E[Cerrar pinza]
+    E --> F[Ir al jigger]
+    F --> G[Dosificar líquido]
+    G --> H[Servir sobre coctelera]
+    H --> I[Soltar botella]
+    I --> J[Regresar a posición segura]
+    J --> K([Fin Path_Botella])
+
+```
+El diagrama de flujo muestra la secuencia de funcionamiento del sistema, comenzando con la inicialización y la verificación de botellas seleccionadas. El robot ejecuta uno o varios trayectos de botellas, con un máximo de tres, y posteriormente realiza los procesos de mezclado y batido. Finalmente, el sistema retorna a la posición inicial, concluyendo el ciclo de operación.
+
+#### Path_revolver:
+```
+flowchart TD
+    A([Inicio Path_revolver]) --> B[Ir a zona segura]
+    B --> C[Abrir pinza]
+    C --> D[Tomar cuchara]
+    D --> E[Cerrar pinza]
+    E --> F[Posicionar sobre coctelera]
+    F --> G[Movimiento circular de revolver]
+    G --> H[Retirar cuchara]
+    H --> I[Abrir pinza]
+    I --> J[Volver a zona segura]
+    J --> K([Fin Path_revolver])
+
+```
+
+Este diagrama de flujo describe el proceso mediante el cual el robot se desplaza a una posición segura, toma la cuchara de mezclado y la posiciona sobre la coctelera. A continuación, ejecuta los movimientos necesarios para realizar el mezclado del contenido y, una vez finalizado, retira la cuchara y la devuelve a su ubicación, dejando el sistema listo para la siguiente etapa.
+
+#### Path_batir:
+```
+flowchart TD
+    A([Inicio Path_batir]) --> B[Ir a zona segura]
+    B --> C[Tomar tapa]
+    C --> D[Colocar tapa en coctelera]
+    D --> E[Cerrar pinza]
+    E --> F[Batir coctelera]
+    F --> G[Destapar coctelera]
+    G --> H[Servir bebida en vaso]
+    H --> I[Soltar coctelera]
+    I --> J[Regresar a zona segura]
+    J --> K([Fin Path_batir])
+
+```
+
+El diagrama representa la secuencia en la que el robot toma la tapa de la coctelera, la coloca correctamente y realiza el proceso de batido. Posteriormente, destapa la coctelera y sirve la bebida en el vaso correspondiente, asegurando un flujo continuo y ordenado del proceso.
+
+#### GoHome:
+```
+flowchart TD
+    A([Inicio GoHome]) --> B[Mover a HOME_Origen]
+    B --> C([Fin])
+
+```
+
+Este diagrama de flujo muestra el retorno del robot a su posición de origen una vez finalizadas todas las operaciones. Esta acción garantiza que el sistema quede en un estado seguro y preparado para iniciar un nuevo ciclo de trabajo.
+
 
 ---
 
