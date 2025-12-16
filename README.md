@@ -302,11 +302,13 @@ Este diagrama de flujo muestra el retorno del robot a su posición de origen una
 
 El video de presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/drive/folders/1IVio0eSMy9uFiXIniwHXzH0S-tmAQply?usp=sharing
 
-## Presentación de diapositivas del proyecto
-La presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/file/d/1RpUhUtWlBcLKKDA91ukVLIFzKmLBNA_V/view?usp=sharing
-
 **VIDEO PRESENTACIÓN DEL PROYECTO**
 [![Video del laboratorio Real](https://img.youtube.com/vi/LpkxrvMzsmY/0.jpg)](https://www.youtube.com/watch?v=LpkxrvMzsmY)
+
+
+## Presentación de diapositivas del proyecto
+La presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/file/d/1RpUhUtWlBcLKKDA91ukVLIFzKmLBNA_V/view?usp=sharing
+[📄 Ver informe final](Imágenes/Presentación_Automatización.pdf)
 
 ---
 
