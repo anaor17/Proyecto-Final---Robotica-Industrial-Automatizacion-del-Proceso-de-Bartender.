@@ -1,7 +1,6 @@
 MODULE Module1
-    
-    PERS tooldata GB:=[TRUE,[[-0.695,2.111,301.892],[1,0,0,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
-    TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[1140.162198666,-317.775998403,1054.17],[0,-0.000666,0.999999778,0]]];
+ PERS tooldata GB:=[TRUE,[[-0.695,2.111,301.892],[1,0,0,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[1140.16,-317.776,1054.17],[0,-0.000666,1,0]]];
     CONST jointtarget HOME_Origen:=[[0,0,0,0,30,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST jointtarget cambio_Tool:=[[80,0,0,0,-45,45],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_10:=[[-496.658031874,-879.905155077,495.451963923],[0.267037758,0.732455118,0.426623917,-0.458467413],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -14,20 +13,19 @@ MODULE Module1
     CONST robtarget Target_servir:=[[651.186303805,164.9,-364.414005285],[0.648185209,0.706325113,0.179392229,-0.220860132],[-1,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_sobre_coctelera:=[[-157.08,-751.85,529.16],[0.314795814,0.672837861,0.545242344,-0.38846312],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_coctelera:=[[-221.2,-867.5,20],[0.5,0.5,0.5,-0.5],[-2,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_cuchara1:=[[-466.38,-805.75,349.46],[0.342445782,0.61903998,0.364542265,-0.605499238],[-2,-1,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_cuchara2:=[[-467.1,-807,196.7],[0.364186916,0.606108811,0.364186916,-0.606108811],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_cuchara1:=[[-466.38,-805.75,546.378609396],[0.342445782,0.61903998,0.364542265,-0.605499238],[-2,-1,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_cuchara2:=[[-467.1,-807,277.331003306],[0.364186916,0.606108811,0.364186916,-0.606108811],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_tapa1:=[[428,-805.6,250],[0.612372436,0.353553391,0.612372436,-0.353553391],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_tapa2:=[[428,-805.6,153.7],[0.612372436,0.353553391,0.612372436,-0.353553391],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_coctelera1:=[[-221.2,-867.5,300],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_coctelera2:=[[-221.2,-867.5,117.4],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  
     CONST robtarget Target_servir_sobre_coctelera:=[[-190,-807.5,372.722968636],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_revolver1:=[[-235,-777,230],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_revolver2:=[[-220,-792,230],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_revolver4:=[[-220,-762,230],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_revolver3:=[[-205,-777,230],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_revolver1:=[[-235,-777,294.592162995],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_revolver2:=[[-220,-792,294.592162995],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_revolver4:=[[-220,-762,294.592162995],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_revolver3:=[[-205,-777,294.592162995],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_revolver_2:=[[-221,-837.5,220],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_revolver_1:=[[-221,-897.5,220],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_giro_sobre_coctelera:=[[-221,-777.5,340],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_giro_sobre_coctelera:=[[-221,-777.5,447.505660002],[0.5,0.5,-0.5,0.5],[-2,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_auxiliarrevolver:=[[-221.2,-867.5,285],[0.5,0.5,0.5,-0.5],[-2,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_Home_1:=[[768.085292445,2.111,529.155887656],[0.5,0,0.866025404,0],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_botella_2:=[[983.033650539,-171.191789957,506.413922298],[0.611256641,0.068820231,0.786618838,-0.053478027],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -96,8 +94,8 @@ MODULE Module1
     CONST robtarget Target_Bot6_safe:=[[612.740191168,-120.913227034,449.666124324],[0.714345929,0.04560575,0.698141516,-0.015113975],[1,-1,-2,6],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_6:=[[896.863496214,-120.913227034,449.666124324],[0.714345929,0.04560575,0.698141516,-0.015113975],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_coctelera2_2:=[[-221.2,-867.5,186.690617642],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_coctelerarevolver:=[[-221.2,-777.5,340],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget Target_cocteleratapa:=[[-221.2,-867.5,217.945212009],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_coctelerarevolver:=[[-221.2,-777.5,445.77748736],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]; !Cambia este
+    CONST robtarget Target_cocteleratapa:=[[-221.2,-768.175636131,217.945212009],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_vaso_vaciar:=[[-812.979448124,-515.195558307,576.987577049],[0.649258189,0.567504382,-0.373682311,-0.341707639],[-2,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_vaso_1:=[[-812.979448124,-515.195558307,576.987577049],[0.217471079,0.665519493,0.137052901,-0.700718658],[-2,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_camino1:=[[629.899991868,63.900002055,672.799990727],[0.500000008,-0.000000001,0.866025399,-0.000000003],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -108,6 +106,16 @@ MODULE Module1
     CONST robtarget Target_caminopara6_2:=[[730.099985994,-105.00000604,373.699987839],[0.500000015,-0.00000001,0.866025395,-0.000000012],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_caminopara6_3:=[[733.799996407,-187.299990743,358.999896002],[0.708222015,0.03110011,0.702262014,-0.065440237],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_caminopara5_1:=[[730.099983747,63.900001356,380.299972519],[0.500000009,0.000000003,0.866025399,0.000000004],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_caminopara6_3_safe:=[[733.799996407,-187.299990743,372.130829511],[0.708222015,0.03110011,0.702262014,-0.065440237],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_Sbotella5_safe:=[[706.2,108.1,373.634865253],[0.70822984,0.031259993,0.702249842,-0.065409985],[0,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_botella5_2:=[[917.8,108.1,377.393520993],[0.708209198,0.031229965,0.702269205,-0.065439926],[0,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_botella6_2:=[[917.889633038,-187.299990743,372.130829511],[0.708222015,0.03110011,0.702262014,-0.065440237],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_coctelera1_2:=[[-207.800640092,-782.875642848,471.869891412],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_coctelera1_3:=[[-236.118941189,-772.079792418,301.509603722],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+   CONST robtarget Target_coctelera1:=[[-213.574804605,-823.563973001,471.869891412],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     CONST robtarget Target_coctelera2:=[[-221.2,-818.165788984,144.446637853],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_coctelera2_safe:=[[-221.2,-818.165788984,184.510581127],[0.5,0.5,0.5,-0.5],[-2,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+   
    
     
     PROC main()
@@ -115,12 +123,13 @@ MODULE Module1
         Path_Botella1;
         Path_Botella2;
         Path_Botella3;
-        Path_Botella4;
-        Path_Botella5;
-        Path_Botella6;
-        Path_revolver;
-        Path_batir;
-        GoHome;
+!        Path_Botella4;
+!        Path_Botella5;
+!        Path_Botella6;
+!        Path_revolver;
+!        Path_batir;
+        Path_revolver_servir;
+        
 
     ENDPROC
     
@@ -128,7 +137,6 @@ MODULE Module1
         MoveAbsJ HOME_Origen,v1000,fine,tool0;
     ENDPROC
     
-
 
     PROC Path_revolver()
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -138,9 +146,10 @@ MODULE Module1
         MoveJ Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_cuchara2,v1000,z1,GB\WObj:=Workobject_piso;
         set DO_04;!cierra pienza
+        
+      
         WaitTime 2;
         MoveL Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
-        
         !revolver 
         MoveJ Target_coctelerarevolver,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_giro_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -155,6 +164,7 @@ MODULE Module1
         MoveJ Target_coctelerarevolver,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
         Reset DO_04;!abre pinza
+       
         WaitTime 2;
         MoveJ Target_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -172,6 +182,7 @@ MODULE Module1
         MoveL Target_tapa2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+  
         WaitTime 2;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         
@@ -180,9 +191,11 @@ MODULE Module1
         MoveL Target_cocteleratapa,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+       
         WaitTime 2;
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
         set DO_04;!cierra pienza
+     
         WaitTime 2;
 
 
@@ -200,18 +213,21 @@ MODULE Module1
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+    
         WaitTime 2;
         
         !agarrrar de nuevo la tapa 
         MoveL Target_cocteleratapa,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+     
         WaitTime 2;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_tapa2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+ 
         WaitTime 2;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         
@@ -220,6 +236,7 @@ MODULE Module1
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+  
         WaitTime 2;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_vaso_1,v1000,z1,GB\WObj:=Workobject_piso;
@@ -229,13 +246,14 @@ MODULE Module1
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+       
         WaitTime 2;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
         
-        !Set DO_01;
+     
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
-        !Reset DO_01;
+        
 
         
         
@@ -251,8 +269,7 @@ MODULE Module1
         MoveL Target_botella1,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
-        set B1;
-        
+    
         WaitTime 2;
         MoveL Target_Sbotella1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -264,7 +281,7 @@ MODULE Module1
         MoveL Target_botella1,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
-        Reset B1;
+      
         WaitTime 2;
         MoveL Target_Sbotella1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -272,7 +289,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
-        set jigger;
+     
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_servir_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -282,7 +299,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
-        Reset jigger;
+      
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -303,6 +320,7 @@ MODULE Module1
         MoveL Target_botella2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+     
         WaitTime 2;
         MoveL Target_Sbotella2,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -314,6 +332,7 @@ MODULE Module1
         MoveL Target_botella2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+ 
         WaitTime 2;
         MoveL Target_Sbotella2,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -321,6 +340,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+    
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_servir_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -330,6 +350,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+    
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -342,13 +363,14 @@ MODULE Module1
         set DO_04;!abre pinza
         WaitTime 2;
         MoveJ Target_Botella3_safe,v1000,z5,GB\WObj:=Workobject_piso;
-          Reset DO_04; !abre pinza
-          WaitTime 0.5;
-          MoveL Target_botella3,v1000,z5,GB\WObj:=Workobject_piso;
-          WaitTime 1;
-          set DO_04;!cierra pienza
-          WaitTime 1;
-          MoveL Target_Botella3_safe,v1000,z5,GB\WObj:=Workobject_piso;
+        Reset DO_04; !abre pinza
+        WaitTime 0.5;
+        MoveL Target_botella3,v1000,z5,GB\WObj:=Workobject_piso;
+        WaitTime 1;
+        set DO_04;!cierra pienza
+     
+        WaitTime 1;
+        MoveL Target_Botella3_safe,v1000,z5,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_jigger1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_jigger1_2,v1000,z1,GB\WObj:=Workobject_piso;
@@ -358,6 +380,7 @@ MODULE Module1
         MoveJ Target_botella3,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+   
         WaitTime 2;
         MoveJ Target_Sbotella3,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -365,6 +388,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+ 
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_servir_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -374,6 +398,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+      
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -393,6 +418,7 @@ MODULE Module1
         MoveL Target_botella4,v1000,z5,GB\WObj:=Workobject_piso;
         WaitTime 1;
         set DO_04;!cierra pienza
+      
         WaitTime 1;
         MoveL Target_Botella4_safe,v1000,z5,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -404,6 +430,7 @@ MODULE Module1
         MoveJ Target_botella4,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+   
         WaitTime 2;
         MoveJ Target_Sbotella4,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
@@ -411,6 +438,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+       
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_servir_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -420,8 +448,9 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+       
         WaitTime 2;
-        MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
+    MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
         
  
@@ -440,6 +469,7 @@ MODULE Module1
         MoveL Target_botella5,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+    
         WaitTime 2;
         MoveL Target_Sbotella5,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_caminopara5_1,v1000,z1,GB\WObj:=Workobject_piso;
@@ -457,12 +487,13 @@ MODULE Module1
         MoveL Target_camino3,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_camino4,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_caminopara5_1,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveJ Target_Sbotella5,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_botella5,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_Sbotella5_safe,v1000,z100,GB\WObj:=Workobject_piso; !añadido punto de seguridad
+        MoveL Target_botella5_2,v1000,z100,GB\WObj:=Workobject_piso; ! punto de dejada
         WaitTime 2;
         Reset DO_04;!abre pinza
+      
         WaitTime 2;
-        MoveL Target_Sbotella5,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_Sbotella5_safe,v1000,z100,GB\WObj:=Workobject_piso; !añadido punto de seguridad
         MoveJ Target_caminopara5_1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_camino4,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_camino3,v1000,z1,GB\WObj:=Workobject_piso;
@@ -473,6 +504,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+      
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_servir_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -482,12 +514,11 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+    
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
         
-        
- 
     ENDPROC
     
         PROC Path_Botella6()
@@ -506,6 +537,8 @@ MODULE Module1
         MoveL Target_botella6,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+        !set B6;
+        !Set B6;
         WaitTime 2;
         !camino para salir
         MoveL Target_caminopara6_3,v1000,z1,GB\WObj:=Workobject_piso;
@@ -528,13 +561,15 @@ MODULE Module1
         MoveL Target_camino4,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_caminopara6_1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_caminopara6_2,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveJ Target_caminopara6_3,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_botella6,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_caminopara6_3_safe,v1000,z100,GB\WObj:=Workobject_piso; ! cambiar punto de llegada
+        MoveL Target_botella6_2,v1000,z100,GB\WObj:=Workobject_piso; ! cambiar Punto de llegada
+        
         WaitTime 2;
         Reset DO_04;!abre pinza
+       
         WaitTime 2;
         
-        MoveL Target_caminopara6_3,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_caminopara6_3_safe,v1000,z100,GB\WObj:=Workobject_piso;  ! cambiar punto de llegada, punto de seguridad
         MoveJ Target_caminopara6_2,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_caminopara6_1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_camino4,v1000,z1,GB\WObj:=Workobject_piso;
@@ -546,6 +581,7 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         set DO_04;!cierra pienza
+   
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_servir_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
@@ -555,10 +591,9 @@ MODULE Module1
         MoveL Target_jigger2,v1000,z1,GB\WObj:=Workobject_piso;
         WaitTime 2;
         Reset DO_04;!abre pinza
+     
         WaitTime 2;
         MoveL Target_jigger2_arriba,v1000,z1,GB\WObj:=Workobject_piso;
-        
-        
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
         
         
@@ -569,13 +604,16 @@ MODULE Module1
         MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
         Reset DO_04;
-        WaitTime 2;
+        WaitTime 3;
         MoveL Target_cuchara2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
         Set DO_04;
         WaitTime 2;
         MoveL Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_giro_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_revolver1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveC Target_revolver2,Target_revolver3,v1000,z1,GB\WObj:=Workobject_piso;
@@ -587,49 +625,80 @@ MODULE Module1
         MoveJ Target_giro_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveJ Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_cuchara2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
         Reset DO_04;
         WaitTime 2;
+        MoveL Target_cuchara1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_tapa2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
         Set DO_04;
         WaitTime 2;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_coctelera1_3,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 4;
         Reset DO_04;
         WaitTime 2;
+        MoveJ Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
         Set DO_04;
         WaitTime 2;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera2_safe,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera2_safe,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera2_safe,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
         Reset DO_04;
         WaitTime 2;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_coctelera1_3,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 2;
+        set DO_04;
+        WaitTime 2;
+        MoveJ Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_tapa2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 2;
         Reset DO_04;
         WaitTime 2;
         MoveL Target_tapa1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
         MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 4;
         Set DO_04;
         WaitTime 2;
         MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
-        MoveL Target_coctelera2_2,v1000,z100,GB\WObj:=Workobject_piso;
+
+        MoveL Target_vaso_1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_vaso_vaciar,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_vaso_1,v1000,z100,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveL Target_coctelera2,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 2;
+        Reset DO_04;!abre pinza
+        WaitTime 2;
+        MoveL Target_coctelera1,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_sobre_coctelera,v1000,z1,GB\WObj:=Workobject_piso;
+        MoveJ Target_NoGolpear,v1000,z1,GB\WObj:=Workobject_piso;
+        WaitTime 3;
+        set FWD_Conveyor;
+        WaitTime 1;
+        Reset FWD_Conveyor;
+        
+    ENDPROC
+    PROC Path_10()
+        MoveL Target_caminopara6_3_safe,v1000,z100,GB\WObj:=Workobject_piso;
+        MoveL Target_Sbotella5_safe,v1000,z100,GB\WObj:=Workobject_piso;
+        MoveL Target_botella5_2,v1000,z100,GB\WObj:=Workobject_piso;
+        MoveL Target_botella6_2,v1000,z100,GB\WObj:=Workobject_piso;
     ENDPROC
     
 ENDMODULE
-
-
-
-
-
-
-
-
