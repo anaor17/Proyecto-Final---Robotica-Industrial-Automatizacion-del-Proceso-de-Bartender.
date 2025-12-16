@@ -294,7 +294,7 @@ Este diagrama de flujo muestra el retorno del robot a su posición de origen una
 El video de presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/drive/folders/1IVio0eSMy9uFiXIniwHXzH0S-tmAQply?usp=sharing
 
 ## Presentación de diapositivas del proyecto
-La presentación del proyecto se encuentra en el siguiente link: https://www.canva.com/design/DAG7o7kAMEg/2C8pYVQSqTkwUN5pwheIzA/edit
+La presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/file/d/1RpUhUtWlBcLKKDA91ukVLIFzKmLBNA_V/view?usp=sharing
 
 ---
 
