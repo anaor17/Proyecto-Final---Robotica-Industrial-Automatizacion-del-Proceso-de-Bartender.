@@ -170,7 +170,7 @@ El proceso espera la activación del botón Preparar bebida; cuando está activo
 
 ---
 
-## 10. Simulación en RobotStudio
+## 9. Simulación en RobotStudio
 La simulación del sistema automatizado se llevó a cabo en el software ABB RobotStudio, utilizando un entorno virtual que replica las condiciones reales de operación del robot industrial. En este entorno se importó el modelo del robot, junto con los elementos del proceso, tales como botellas, jigger, coctelera, utensilios de mezclado y el área de trabajo. El objetivo principal de la simulación fue validar la lógica del programa RAPID, comprobar la correcta secuencia de movimientos y garantizar la ausencia de colisiones antes de una posible implementación física.
 
 Durante la simulación se verificó el funcionamiento del procedimiento principal (main), el cual actúa como controlador del flujo general del sistema. En esta etapa se confirmó que el programa permite la ejecución flexible de uno o varios procedimientos Path_Botella(i), según la selección realizada, sin requerir una secuencia fija de las seis botellas disponibles. Esta lógica condicional fue correctamente representada en la simulación, permitiendo observar cómo el robot ejecuta únicamente los trayectos necesarios antes de continuar con las etapas posteriores del proceso.
@@ -276,7 +276,7 @@ Este diagrama de flujo muestra el retorno del robot a su posición de origen una
 
 ---
 
-## 11. Video de Presentación
+## 10. Video de Presentación
 
 El video de presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/drive/folders/1IVio0eSMy9uFiXIniwHXzH0S-tmAQply?usp=sharing
 
@@ -293,14 +293,12 @@ Tras el análisis del evento, se determinó que la falla ocurrió como consecuen
 Como posible solución a este inconveniente, se identificó que la rotura del soporte podría haberse reparado mediante el uso de un adhesivo estructural de poliuretano, específicamente el pegante Indupeg 0419, el cual ofrece buenas propiedades de adherencia y resistencia mecánica para este tipo de aplicaciones. Sin embargo, debido a las limitaciones de tiempo asociadas a la fecha de entrega del proyecto, no fue posible realizar dicha reparación ni llevar a cabo las pruebas necesarias para validar su efectividad, por lo que se optó por no continuar con la implementación física y concentrar los esfuerzos en la simulación del sistema.
 
 ---
-## 12. Aprendizajes y Consideraciones
+## 11. Aprendizajes y Consideraciones
 
-Durante el desarrollo del proyecto se fortalecieron conocimientos en programación de robots industriales, diseño de herramientas de agarre y automatización de procesos. Además, se identificó la importancia de la seguridad al manipular líquidos en entornos con sistemas eléctricos y mecánicos.
-
-El proyecto permitió comprender de manera práctica los retos asociados a la automatización de procesos industriales originalmente manuales.
+Este proyecto resultó ser bastante retador, ya que requirió la inversión de varios días de trabajo continuo y la superación de diversos obstáculos a lo largo de su desarrollo. Entre las principales dificultades enfrentadas se encontró la adquisición del sistema neumático, el cual no estaba disponible en el laboratorio, así como la rotura del gripper durante las pruebas, lo que obligó a replantear algunas decisiones de diseño. Adicionalmente, la limitada disponibilidad de tiempo para dedicar al proyecto representó un reto importante; sin embargo, a pesar de estas restricciones, todos los integrantes del equipo participaron activamente en las distintas etapas, incluyendo el diseño del sistema, la elaboración de utensilios, la programación de rutinas y la documentación del proyecto. Otro aspecto relevante fue la dificultad para acceder de manera constante al laboratorio, razón por la cual extendemos un especial agradecimiento a nuestro monitor Johan López Arias, quien nos brindó su tiempo y apoyo para permitirnos el uso del laboratorio cuando fue posible. Finalmente, se considera que, de haber contado con un mayor margen de tiempo, el alcance y la calidad del proyecto podrían haberse mejorado aún más, reforzando así los aprendizajes obtenidos durante su desarrollo.
 
 ---
 
-## 13. Referencias
+## 12. Referencias
 
 - ABB Robotics. (2023). RobotStudio: Manual de usuario y guía de desarrollo de interfaces HMI con ScreenMaker. ABB Group.
