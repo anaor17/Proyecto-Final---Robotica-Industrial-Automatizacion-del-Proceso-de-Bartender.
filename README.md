@@ -250,7 +250,7 @@ El diagrama de flujo muestra la secuencia de funcionamiento del sistema, comenza
 Este diagrama de flujo describe el proceso mediante el cual el robot se desplaza a una posición segura, toma la cuchara de mezclado y la posiciona sobre la coctelera. A continuación, ejecuta los movimientos necesarios para realizar el mezclado del contenido y, una vez finalizado, retira la cuchara y la devuelve a su ubicación, dejando el sistema listo para la siguiente etapa.
 
 #### Path_batir:
-```
+```mermaid
 flowchart TD
     A([Inicio Path_batir]) --> B[Ir a zona segura]
     B --> C[Tomar tapa]
@@ -268,7 +268,7 @@ flowchart TD
 El diagrama representa la secuencia en la que el robot toma la tapa de la coctelera, la coloca correctamente y realiza el proceso de batido. Posteriormente, destapa la coctelera y sirve la bebida en el vaso correspondiente, asegurando un flujo continuo y ordenado del proceso.
 
 #### GoHome:
-```
+```mermaid
 flowchart TD
     A([Inicio GoHome]) --> B[Mover a HOME_Origen]
     B --> C([Fin])
