@@ -288,9 +288,13 @@ El video de presentación del proyecto se encuentra en el siguiente link: https:
 
 ## Inconvenientes Presentados en el Desarrollo del Proyecto
 
+-El gripper angular con el que se contaba en el laboratorio tenia unos adaptadores antiguos, por lo que se decidio cambiarlos, no se contaba con las mangueras necesarias y las compramos, adicionalmente se compraron los acoples para las valvulas.
+
+-Debido al diseño de gripper que hicimos y a las botellas usadas, se  posicionaron  siguiendo una matriz de 3x2, porque de lo contrario de haberlo hecho 2x3, el espacio de la estanteria hubiese chocado con el espacio que ocupaba el gripper al recoger las botellas. Lo anterior generó tener que llegar a las posiciones inferiores ampliando el rango de operación del robot.
+
 <p align="center"> <img src="Imágenes/gripperRoto.png" width="400"> </p> <p align="center"><em>Soporte del gripper dañado como consecuencia de la fatiga del material.</em></p>
 
-Durante la implementación física de la rutina desarrollada para el cumplimiento del proyecto se presentó un inconveniente que impidió la continuación normal de las pruebas experimentales. En particular, el soporte del gripper, componente encargado de unir el flange del robot con el cilindro neumático de doble efecto utilizado para el accionamiento de la herramienta, sufrió una falla estructural y se rompió durante la ejecución del sistema.
+-Durante la implementación física de la rutina desarrollada para el cumplimiento del proyecto se presentó un inconveniente que impidió la continuación normal de las pruebas experimentales. En particular, el soporte del gripper, componente encargado de unir el flange del robot con el cilindro neumático de doble efecto utilizado para el accionamiento de la herramienta, sufrió una falla estructural y se rompió durante la ejecución del sistema.
 
 Tras el análisis del evento, se determinó que la falla ocurrió como consecuencia de un proceso de fatiga del material. Este fenómeno se vio favorecido por las cargas repetitivas generadas durante los ciclos de apertura y cierre del gripper, así como por las fuerzas ejercidas durante la manipulación de los distintos implementos del proceso de bartender. La combinación de estos factores provocó el debilitamiento progresivo del soporte hasta su fractura.
 
