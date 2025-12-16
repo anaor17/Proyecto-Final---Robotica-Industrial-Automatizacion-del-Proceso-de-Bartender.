@@ -305,6 +305,9 @@ El video de presentación del proyecto se encuentra en el siguiente link: https:
 ## Presentación de diapositivas del proyecto
 La presentación del proyecto se encuentra en el siguiente link: https://drive.google.com/file/d/1RpUhUtWlBcLKKDA91ukVLIFzKmLBNA_V/view?usp=sharing
 
+**VIDEO PRESENTACIÓN DEL PROYECTO**
+[![Video del laboratorio Real](https://img.youtube.com/vi/LpkxrvMzsmY/0.jpg)](https://www.youtube.com/watch?v=LpkxrvMzsmY)
+
 ---
 
 ## Inconvenientes Presentados en el Desarrollo del Proyecto
