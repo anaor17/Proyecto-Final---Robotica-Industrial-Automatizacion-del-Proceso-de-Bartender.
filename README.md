@@ -78,9 +78,10 @@ Estos objetos presentan diferentes geometrías y tamaños, lo que representa un 
 
 ---
 
-## 5. Desarrollo de la Herramienta Multi-Propósito (Gripper)
+## 5. Diseño de la Herramienta Multi-Propósito (Gripper)
 
-<p align="center"> <img src="Imágenes/gripper.png" width="400"> </p> <p align="center"><em>Vista general del gripper multipropósito diseñado para la manipulación de los distintos utensilios y envases.</em></p>
+➡️ [Ver gripper diseñado en:](https://www.youtube.com/watch?v=oPb9vg-Ojd0)
+![Vista previa del laboratorio](Media/gripper.gif)
 
 Se diseñó un gripper personalizado accionado mediante un sistema electroneumático, empleando un cilindro neumático para gripper, disponible en el laboratorio. Este sistema permite el control preciso de la apertura y el cierre del gripper, garantizando un funcionamiento confiable durante todo el proceso automatizado. El diseño del gripper fue pensado para adaptarse a los distintos implementos utilizados en el proceso de bartender, sin necesidad de realizar cambios mecánicos entre ciclos de operación.
 
