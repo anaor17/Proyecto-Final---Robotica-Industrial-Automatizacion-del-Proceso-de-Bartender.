@@ -113,6 +113,8 @@ Adicionalmente, se llevó a cabo la medición y el modelamiento detallado de tod
 
 ## 7. Proceso Automatizado
 
+[![Video del laboratorio Real](https://img.youtube.com/vi/OSdnihtZNg4/0.jpg)](https://www.youtube.com/watch?v=OSdnihtZNg4)
+
 El proceso automatizado de preparación del cóctel se desarrolla siguiendo una secuencia ordenada y repetible que garantiza precisión, seguridad y consistencia en cada bebida elaborada. Inicialmente, el usuario interactúa con la interfaz HMI para seleccionar el ingrediente deseado, lo que permite al sistema identificar la ubicación exacta del mismo dentro de la barra de almacenamiento. A continuación, el robot ejecuta la toma controlada del ingrediente seleccionado, asegurando una manipulación estable y precisa. 
 
 <p align="center"> <img src="Imágenes/tomaVaso.png" width="400"> </p> <p align="center"><em>Secuencia en la que el robot toma el vaso de la coctelera usado para mezclar las bebidas.</em></p>
