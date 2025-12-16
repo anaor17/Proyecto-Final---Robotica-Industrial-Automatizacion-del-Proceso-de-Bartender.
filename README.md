@@ -193,8 +193,8 @@ En conclusión, la simulación en RobotStudio permitió validar de manera efecti
 ### Diagramas de flujo
 #### Diagrama general
 
-````
-flowchart TD
+```mermaid
+    flowchart TD
     A([Inicio]) --> B[Inicialización del sistema]
 
     B --> C{¿Hay botella seleccionada?}
@@ -216,8 +216,8 @@ El diagrama de flujo representa la lógica general de operación del sistema aut
 
 #### Path_Botella i
 
-```
-flowchart TD
+```mermaid
+    flowchart TD
     A([Inicio Path_Botella]) --> B[Mover a posición segura]
     B --> C[Abrir pinza]
     C --> D[Tomar botella]
@@ -232,9 +232,8 @@ flowchart TD
 ```
 El diagrama de flujo muestra la secuencia de funcionamiento del sistema, comenzando con la inicialización y la verificación de botellas seleccionadas. El robot ejecuta uno o varios trayectos de botellas, con un máximo de tres, y posteriormente realiza los procesos de mezclado y batido. Finalmente, el sistema retorna a la posición inicial, concluyendo el ciclo de operación.
 
-#### Path_revolver:
-```
-flowchart TD
+```mermaid
+    flowchart TD
     A([Inicio Path_revolver]) --> B[Ir a zona segura]
     B --> C[Abrir pinza]
     C --> D[Tomar cuchara]
