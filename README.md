@@ -187,7 +187,7 @@ Finalmente, se validó el procedimiento GoHome, el cual retorna el robot a su po
 En conclusión, la simulación en RobotStudio permitió validar de manera efectiva la lógica del programa RAPID, la correcta ejecución de los distintos procedimientos y la viabilidad del proceso automatizado. Esta etapa resultó clave para detectar posibles errores de secuencia, optimizar trayectorias y garantizar un funcionamiento seguro y eficiente del sistema antes de su implementación en un entorno real.
 
 ### Video de simulación
-[![Video del laboratorio Simulado](https://img.youtube.com/vi/pXSyhm7AOjs/0.jpg)]([https://youtu.be/pXSyhm7AOjs])
+[![Video del laboratorio Simulado](https://img.youtube.com/vi/pXSyhm7AOjs/0.jpg)]([https://youtu.be/pXSyhm7AOjs])]
 
 ### Diagramas de flujo
 #### Diagrama general
