@@ -169,10 +169,19 @@ En conjunto, la HMI no solo permite seleccionar las repisas y bebidas de manera 
 ---
 
 ## 10. Simulación en RobotStudio
+La simulación del sistema automatizado se llevó a cabo en el software ABB RobotStudio, utilizando un entorno virtual que replica las condiciones reales de operación del robot industrial. En este entorno se importó el modelo del robot, junto con los elementos del proceso, tales como botellas, jigger, coctelera, utensilios de mezclado y el área de trabajo. El objetivo principal de la simulación fue validar la lógica del programa RAPID, comprobar la correcta secuencia de movimientos y garantizar la ausencia de colisiones antes de una posible implementación física.
 
-Se desarrolló el modelo completo de la celda de trabajo en RobotStudio, incluyendo el manipulador, la barra de almacenamiento, los implementos de bartender y la banda transportadora. La simulación permite visualizar las trayectorias del robot y calcular el tiempo total del proceso.
+Durante la simulación se verificó el funcionamiento del procedimiento principal (main), el cual actúa como controlador del flujo general del sistema. En esta etapa se confirmó que el programa permite la ejecución flexible de uno o varios procedimientos Path_Botella(i), según la selección realizada, sin requerir una secuencia fija de las seis botellas disponibles. Esta lógica condicional fue correctamente representada en la simulación, permitiendo observar cómo el robot ejecuta únicamente los trayectos necesarios antes de continuar con las etapas posteriores del proceso.
 
-El proyecto de RobotStudio se encuentra en la carpeta `robotstudio/`.
+Cada uno de los procedimientos Path_Botella(i) fue simulado de manera individual, comprobando que el robot se desplaza primero a posiciones seguras, accede a la botella correspondiente, realiza la sujeción mediante la pinza y efectúa el vertido controlado del líquido en la coctelera. En RobotStudio se validó que las trayectorias programadas evitan interferencias con otros elementos del entorno y mantienen una orientación adecuada de la herramienta durante el proceso de dosificación.
+
+Una vez finalizada la fase de adición de ingredientes, se simuló el procedimiento Path_revolver, en el cual el robot toma el utensilio de mezclado y ejecuta movimientos controlados sobre la coctelera. En esta etapa se verificó que las trayectorias circulares y los puntos de aproximación permiten una mezcla adecuada sin generar colisiones ni movimientos bruscos, asegurando un comportamiento estable del robot dentro del espacio de trabajo.
+
+Posteriormente, se ejecutó el procedimiento Path_batir, encargado de simular el cierre de la coctelera, el proceso de agitado y el servido final de la bebida. La simulación permitió confirmar que la secuencia de movimientos es coherente, continua y segura, y que las transiciones entre posiciones están correctamente definidas para evitar esfuerzos innecesarios en el manipulador.
+
+Finalmente, se validó el procedimiento GoHome, el cual retorna el robot a su posición de origen una vez finalizado el ciclo completo. Esta etapa es fundamental para dejar el sistema en un estado seguro y preparado para un nuevo ciclo de operación. En RobotStudio se comprobó que el robot alcanza la posición home sin interferencias y respetando las condiciones de seguridad establecidas.
+
+En conclusión, la simulación en RobotStudio permitió validar de manera efectiva la lógica del programa RAPID, la correcta ejecución de los distintos procedimientos y la viabilidad del proceso automatizado. Esta etapa resultó clave para detectar posibles errores de secuencia, optimizar trayectorias y garantizar un funcionamiento seguro y eficiente del sistema antes de su implementación en un entorno real.
 
 ---
 
