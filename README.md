@@ -138,7 +138,7 @@ El proceso automatizado de preparación del cóctel se desarrolla siguiendo una 
 Posteriormente, el líquido es vertido en el jigger, donde se realiza la medición exacta de la cantidad requerida, evitando errores en la dosificación. Una vez medida, la porción es añadida a la coctelera, donde se van incorporando progresivamente los diferentes ingredientes seleccionados. 
 
 <p align="center">
-  <img src="Imágenes/tomaCucharilla.png" width="400">
+  <img src="Imágenes/tomaCucharilla.jpg" width="400">
 </p>
 
 Tras la adición de varios componentes, se lleva a cabo un mezclado inicial mediante una cucharilla para homogeneizar la mezcla. Seguidamente, la coctelera es agitada de forma automática durante un tiempo determinado, permitiendo una correcta integración de los sabores. Finalmente, el sistema procede al servido del cóctel en la copa final, completando el ciclo de preparación de manera eficiente y garantizando un resultado uniforme en cada ejecución.
